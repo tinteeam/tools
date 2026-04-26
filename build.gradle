@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'io.github.randomusert.tinteeam.gtools.Main'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': "io.github.randomusert.tinteaam.gtool.Main"
+        )
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
